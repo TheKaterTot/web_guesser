@@ -5,8 +5,8 @@ def random
   rand(100)
 end
 
-num = random
+number = random
 
 get "/" do
-  "The secret number is: #{num}"
+  erb :index, :locals => {:number => number}
 end
